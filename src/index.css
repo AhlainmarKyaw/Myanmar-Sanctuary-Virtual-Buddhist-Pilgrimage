@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sanctuary-burgundy: #4a121b;
+  --color-sanctuary-burgundy-deep: #320b11;
+  --color-sanctuary-brown: #261610;
+  --color-sanctuary-lacquer: #190e0a;
+  --color-sanctuary-gold: #c99a32;
+  --color-sanctuary-gold-light: #e5c36c;
+  --color-sanctuary-gold-dark: #946c17;
+  --color-sanctuary-cream: #fbf7ee;
+  --color-sanctuary-parchment: #f3ebdc;
+  --color-sanctuary-saffron: #c26427;
+  --color-sanctuary-charcoal: #1f1b18;
+  --color-sanctuary-muted: #665b53;
+
+  --font-display: "Cormorant Garamond", "Noto Sans Myanmar", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Myanmar", system-ui, -apple-system, sans-serif;
+  --font-myanmar: "Noto Sans Myanmar", "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: var(--color-sanctuary-cream);
+    color: var(--color-sanctuary-charcoal);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  h1, h2 {
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sanctuary-gold);
+    outline-offset: 2px;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

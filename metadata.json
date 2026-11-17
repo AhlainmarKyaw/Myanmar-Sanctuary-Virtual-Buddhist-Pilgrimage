@@ -1,0 +1,6 @@
+{
+  "name": "Virtual Myanmar Buddhist Sanctuary",
+  "description": "A peaceful spiritual sanctuary and cultural archive for exploring Myanmar's sacred pagodas with interactive Street View and maps, practicing meditation, virtual prayer, digital mala bead counting, and learning Buddhist heritage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
